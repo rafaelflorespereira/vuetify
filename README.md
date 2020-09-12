@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vue-dashboard
 
 ## Project setup
@@ -22,3 +23,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# vuetify
+practising Vuetify
+>>>>>>> c9ddd68f783962fd386535d5fdcdc1202b16be51
