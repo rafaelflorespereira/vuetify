@@ -1,19 +1,13 @@
 <template>
-  <div>
-    <app-bar></app-bar>
-    <my-login></my-login>
-  </div>
+<div>
+  <h1>This is my Home Page</h1>
+</div>
 </template>
 
 <script>
-import AppBar from '@/components/dashboard/AppBar'
-import Login from '@/components/dashboard/Login'
 
 export default {
-    components: {
-        AppBar,
-        MyLogin: Login
-    }
+
 }
 </script>
 
