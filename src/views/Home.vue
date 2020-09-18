@@ -1,35 +1,54 @@
 <template>
-<<<<<<< HEAD
-<div>
-  <h1>This is my Home Page</h1>
-</div>
+<v-container>
+  <v-row
+
+  >
+    <v-carousel
+      show-arrows-on-hover
+    >
+      <v-carousel-item
+        v-for="(color, index) in colors"
+        :key="index"
+      >
+        <v-sheet
+          :color="color"
+          height="100%"
+          tile
+        >
+          <v-row
+            class="fill-height"
+            align="center"
+            justify="center"
+          >
+            <div class="display-3">
+              Slide {{ index + 1 }}
+            </div>
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
+  </v-row>
+
+</v-container>
+
 </template>
 
 <script>
-
 export default {
-
+  data () {
+    return {
+      colors: [
+        'indigo',
+        'secondary',
+        'yellow darken-2',
+        'red',
+        'orange'
+      ]
+    }
+  }
 }
 </script>
 
 <style>
 
 </style>
-=======
-	<div class="home">
-		<HelloWorld msg="Welcome to Your Vue.js App" />
-	</div>
-</template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-	name: 'home',
-	components: {
-		HelloWorld
-	}
-}
-</script>
->>>>>>> 42f4983982806422e1664cc34a814f90f8896d62

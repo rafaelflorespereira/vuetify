@@ -1,6 +1,31 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      left
+      color="primary"
+      dark
+    >
+      <v-list>
+        <v-list-item
+          v-for="link in links"
+          :key="link.title"
+          link
+        >
+          <v-list-item-icon>
+            <v-icon>{{link.icon}}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>{{ link.label }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar app color="primary lighten-1" dark>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Vuetify Dashboard</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
@@ -16,9 +41,11 @@
         Toggle Theme
       </v-btn>
     </v-app-bar>
-    <v-content>
+
+    <v-main fluid>
       <router-view></router-view>
-    </v-content>
+    </v-main>
+
     <v-footer color="primary lighten-1" padless>
       <v-layout justify-center wrap>
         <v-btn
@@ -41,26 +68,37 @@
 </template>
 
 <script>
+
 export default {
   name: 'App',
   data() {
     return {
+      drawer: false,
       links: [
         {
           label: 'Home',
-          url: '/'
+          url: '/',
+          icon: 'mdi-home'
         },
         {
           label: 'Login',
-          url: '/login'
+          url: '/login',
+          icon: 'mdi-login'
         },
         {
           label: 'Signup',
-          url: '/signup'
+          url: '/sign-up',
+          icon: 'mdi-face'
         },
         {
           label: 'Dashboard',
-          url: '/dashboard'
+          url: '/dashboard',
+          icon: 'mdi-view-dashboard'
+        },      
+        {
+          label: 'Grid System',
+          url: '/grid',
+          icon: 'mdi-grid'
         }
       ]
     }

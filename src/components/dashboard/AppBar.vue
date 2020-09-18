@@ -4,7 +4,8 @@
     src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
     dark
     >
-    <v-toolbar-title>Vue Dashboard</v-toolbar-title>
+    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-toolbar-title>Practising Vuetify</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
         <v-btn 

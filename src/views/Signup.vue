@@ -1,7 +1,7 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col>
+  <v-container fluid>
+    <v-row justify="center">
+      <v-col cols="3">
         <h1>Signup</h1>
         <v-form ref="signUpForm" v-model="formValidity">
           <v-text-field

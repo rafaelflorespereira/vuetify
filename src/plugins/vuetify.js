@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib';
-
-Vue.use(Vuetify);
-
-export default new Vuetify({
-});
-=======
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
 
@@ -27,4 +18,3 @@ export default new Vuetify({
     }
   }
 })
->>>>>>> 42f4983982806422e1664cc34a814f90f8896d62

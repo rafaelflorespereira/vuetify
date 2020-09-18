@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-# vue-dashboard
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-=======
 # Beautify with Vuetify
 
 Learn how to create beautiful web apps with [Vuetify](https://vuetifyjs.com/), a component framework that is built according to [Google's Material Design](https://material.io/design/) specifications.
@@ -74,5 +49,4 @@ yarn run lint
 
 ### Customize configuration
 
->>>>>>> 42f4983982806422e1664cc34a814f90f8896d62
 See [Configuration Reference](https://cli.vuejs.org/config/).
